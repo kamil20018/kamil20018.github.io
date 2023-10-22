@@ -1,0 +1,26 @@
+html,body{height:100%;}
+
+header {
+    text-align: center;
+    font-size: 400%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 70%;
+}
+
+.item1 {
+    flex: 1
+}
+
+.item2 {
+    width: 60%;
+    height: 100%;
+}
+
+.item3 {
+    flex: 1
+}
