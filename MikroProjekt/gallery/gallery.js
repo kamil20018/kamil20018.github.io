@@ -1,5 +1,5 @@
 imgPath = "../images/gallery/stock"
-currImage = 1
+currImage = 2
 imageCount = 5
 
 document.getElementById("left").addEventListener("click", leftClick);
