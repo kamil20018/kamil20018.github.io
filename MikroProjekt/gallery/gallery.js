@@ -1,18 +1,23 @@
-imgPath = "../images/gallery/stock"
+imgPath = "../images/gallery/"
 currImage = 2
-imageCount = 5
-
+imageNames = ["old_town.jpg", "vasa.jpg", "fotografiska.jpg", "skansen.jpg"]
+imageCount = imageNames.length
 document.getElementById("left").addEventListener("click", leftClick);
 document.getElementById("right").addEventListener("click", rightClick);
-image = document.getElementById("image")
+image = document.getElementById("image");
+image.src = getImagePath();
 
 function leftClick(){
     currImage = currImage - 1;
     if(currImage < 0) {currImage = imageCount - 1};
-    image.src = imgPath + currImage + ".jpg";
+    image.src = getImagePath();
 }
 
 function rightClick(){
-    currImage = (currImage + 1) % 5;
-    image.src = imgPath + currImage + ".jpg"
+    currImage = (currImage + 1) % imageCount;
+    image.src = getImagePath();
+}
+
+function getImagePath(){
+    return imgPath + imageNames[currImage];
 }
