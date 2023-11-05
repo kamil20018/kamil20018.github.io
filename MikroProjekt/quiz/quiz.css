@@ -1,0 +1,30 @@
+h1 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2vw;
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    margin: 15px;
+    padding: 10px;
+    width: 60%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+#question {
+    background: linear-gradient(to right, #e66465, #9198e5);
+    box-shadow: 0 0 25px #413f3f;
+}
