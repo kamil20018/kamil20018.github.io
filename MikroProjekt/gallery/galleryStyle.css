@@ -2,7 +2,7 @@ html,body{height:100%;}
 
 header {
     text-align: center;
-    font-size: 400%;
+    font-size: 6vw;
 }
 
 .grid-container {
@@ -11,44 +11,79 @@ header {
     "a b c"
     "d d d"
     "e e e";
-    width: 95%;
+    margin: auto;
+    width: 90%;
     height: 50%;
     grid-template-columns: 1fr 5fr 1fr;
 }
 
 .item1 {
     grid-area: a;
-    background-color: green;
+    background-image: url("../images/gallery/left-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% ;
+}
 
+.item1:hover {
+    box-shadow: 0 0 10px #5d5b5b;
 }
 
 .item2 {
     grid-area: b;
     width: 100%;
     height: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 .item3 {
     grid-area: c;
-    background-color: blue;
+    background-image: url("../images/gallery/left-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scaleX(-1);
+    background-size: 90%;
+}
 
+.item3:hover {
+    box-shadow: 0 0 15px #5d5b5b;
 }
 
 .item4 {
     grid-area: d;
+    font-size: 3vw;
 }
 
 .item5 {
     grid-area: e;
+    text-wrap: wrap;   
+    font-size: 2vw;
 }
 
 
 @media (max-width: 800px) {
 
-    .item2{
-        order: 1;
-        width: 100%;
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        "b b"
+        "a c"
+        "d d"
+        "e e";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr 2fr 2fr 2fr;
     }
     
+    .item1 {
+        background-size: 15% 90%;
+        height: 75px;
+    }
+
+    .item3 {
+        background-size: 15% 90%;
+        height: 75px;
+    }
 
 }

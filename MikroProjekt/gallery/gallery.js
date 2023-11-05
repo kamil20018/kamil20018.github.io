@@ -2,10 +2,10 @@ imgPath = "../images/gallery/"
 currImage = 0
 imageNames = ["old_town.jpg", "vasa.jpg", "fotografiska.jpg", "skansen.jpg"]
 imageDescriptions = [
-    ["Stare miasto", "Jest na wyspie Stadsholmen. Początki: XIIIw aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"],
-    ["Muzeum vasa", "Fajny stary statek z XVIIw, prawie w całości oryginalne deski aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"],
-    ["Galeria Fotografiska", "Zdjęcia, sztuka nowoczesna itp. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"],
-    ["Muzeum skansen", "Jak kiedyś szwedzi mieszkali. Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]
+    ["Stare miasto", "Stare miasto (Gamla Stan) to najstarsza część Sztokholmu. Początkowo ten obszar odpowiadał całemu miastu i dopiero potem zaczął się rozrastać poza jego granice. Niestety niewiele pozostało z murów i fortyfikacji które kiedyś je otoczały. Gamla Stan zajmuje cały obszar wyspy Stadsholmen. Klimatyczne wąskie uliczki, sklepy i restauracje sprawiają, że jest to obowiązkowy punkt wycieczkowy dla zwiedzających Sztokholm."],
+    ["Muzeum vasa", "Okręt Vasa przewrócił się i zatonął w Sztokholmie w czasie swojej pierwszej podróży w 1628 roku. Po 333 latach na dnie morza potężny okręt wojenny został uratowany i jego podróż mogła być kontynuowana. Dzisiaj Vasa jest najpiękniej zachowanym XVII-wiecznym okrętem na świecie i można go oglądać w specjalnie dla niego wybudowanym muzeum w Sztokholmie. Vasa jest jedynym w swoim rodzaju skarbem sztuki. 98% statku jest wykonane z oryginalnych części, a zdobią go setki rzeźb."],
+    ["Galeria Fotografiska", "Imponująca galeria fotografii w Sztokholmie. Bardzo ciekawe wystawy i mnóstwo pozycji albumowych do zakupienia lub choćby przeglądnięcia. Jest w niej także restauracja"],
+    ["Muzeum skansen", "Sztokholmski Skansen powstał w 1891 roku z inicjatywy Artura Hazeliusa jako pierwsze muzeum na świeżym powietrzu na świecie. To jedna z ciekawszych atrakcji stolicy Szwecji. Jest to najstarsze na świecie muzeum na świeżym powietrzu, w którym zobaczymy historyczną zabudowę oraz występujące na terenie Skandynawii dzikie zwierzęta."]
 ]
 imageCount = imageNames.length
 document.getElementById("left").addEventListener("click", leftClick);
