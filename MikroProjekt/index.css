@@ -1,0 +1,143 @@
+body {
+    text-align: center;
+}
+
+header {
+    font-size: 5vw;
+    background-color: rgb(138, 138, 138);
+}
+
+nav {
+    font-size: 2.5vw;
+    background-color: rgb(96, 96, 96);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+
+article {
+    text-align: justify;
+    font-size: 2vw;
+}
+
+#img1 {
+    width: 50%;
+    float:left;
+    margin-right: 7px;
+}
+
+#img2 {
+    width: 50%;
+    float:right;
+    margin-left: 5px;
+}
+
+footer {
+    background-color: rgb(65, 65, 65);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > img {
+    height: 100%;
+}
+
+h1 {
+    background-color: rgb(138, 138, 138);
+    background-size:cover;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    row-gap: 10px;
+    background-color: rgb(138, 138, 138);
+    background-size:cover;
+
+    font-size: 1.5vw;
+}
+
+form > label {
+    width: 20%;
+}
+
+form > input {
+    width: 10%;
+}
+
+textarea {
+    width: 80%;
+    font-size: 1.2vw;
+}
+
+#comment {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-around;
+}
+
+.single_comment {
+    text-align: left;
+    background-color: rgb(138, 138, 138);
+}
+
+h1 {
+    font-size: 2.0vw;
+}
+
+.single_comment > h3 {
+    font-size: 1.5vw;
+}
+
+.single_comment > div {
+    font-size: 1.3vw;
+}
+
+#filler {
+    height: 200px;
+}
+
+@media (min-width:1400px) {
+
+    #img1 {
+        width: 30%;
+    }
+
+    #img2 {
+        width: 30%; 
+    }
+
+    article {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    article {
+        font-size: 2.5vw;
+    }
+
+}
