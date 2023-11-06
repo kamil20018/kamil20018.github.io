@@ -63,6 +63,17 @@ header {
 }
 
 
+#main_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+}
+
+#main_page:hover {
+    box-shadow: 0 0 10px #5d5b5b;
+}
+
 @media (max-width: 800px) {
 
     .grid-container {

@@ -28,3 +28,14 @@ button {
     background: linear-gradient(to right, #e66465, #9198e5);
     box-shadow: 0 0 25px #413f3f;
 }
+
+#main_page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+}
+
+#main_page:hover {
+    box-shadow: 0 0 10px #5d5b5b;
+}
