@@ -18,7 +18,7 @@ var emptyHeartImage = new Image();
 emptyHeartImage.src = "images/empty_heart.png";
 var fullHeartImage = new Image();
 fullHeartImage.src = "images/full_heart.png";
-
+canvas.style.cursor = "url('images/aim.png'), auto";
 
 class Zombie{
     constructor(x, y, speed, scale){
@@ -64,7 +64,7 @@ function draw() {
 
         for(var i = 0; i < zombies.length; i++){
             if(!zombies[i].alive){
-                score += 10;
+                score += pointsPerKill;
             }
         }
 
@@ -81,7 +81,6 @@ function draw() {
         if(score < 0){
             canvas.removeEventListener('click', canvasClick, false);
         }
-
 
         for(var i = 0; i < zombies.length; i++){
             zombies[i].move();
@@ -143,7 +142,6 @@ function restart(event){
     canvas.removeEventListener('click', restart, false);
 }
 
-//window.addEventListener("load", draw);
 const interval = setInterval(function() {
     draw();
 }, frameInterval);

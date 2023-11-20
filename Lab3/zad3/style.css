@@ -1,7 +1,4 @@
-body {
-    /* cursor:grab; */
-    cursor: url("images/aim.png"), auto;
-}
+
 
 #canvas{
     background-image: url("images/board-bg.jpg");
