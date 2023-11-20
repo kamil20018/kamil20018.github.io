@@ -1,0 +1,11 @@
+body {
+    /* cursor:grab; */
+    cursor: url("images/aim.png"), auto;
+}
+
+#canvas{
+    background-image: url("images/board-bg.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+}
