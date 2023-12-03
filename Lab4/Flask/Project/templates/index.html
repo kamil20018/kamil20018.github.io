@@ -1,0 +1,16 @@
+<html>
+   <body>
+      <form action = "http://localhost:5000/users" method = "post">
+         <p>Enter Name, surname and your job:</p>
+         <p><input type = "text" name = "name" /></p>
+         <p><input type="text" name = "surname"></p>
+         <p><input type="text" name = "job"></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>   
+      <p>Enter the name of people that you want to see listed below</p>
+      <form action="http://localhost:5000/findName" method = "get">
+         <p><input type = "text" name = "searchName" /></p>
+         <p><input type = "submit" value = "getnames" /></p>
+      </form>
+   </body>
+</html>
