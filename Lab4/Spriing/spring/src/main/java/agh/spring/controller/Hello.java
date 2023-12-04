@@ -20,9 +20,7 @@ public class Hello {
     }
 
     @PostMapping("/create")
-    public Person create(@RequestParam(value="name") String name,
-                         @RequestParam(value = "surname") String surname,
-                         @RequestParam(value = "job") String job){
+    public Person create(@RequestParam(value="name") String name, @RequestParam(value = "surname") String surname, @RequestParam(value = "job") String job){
         Person person=new Person(name,surname,job);
         return personService.create(person);
     }
