@@ -38,15 +38,17 @@ def index():
         db.session.add(Person(name = _name, surname = _surname, job = _job))
         db.session.commit()
         return redirect(url_for('home'))
-    
-@app.route('/findName', methods=['GET'])
+
+@app.route('/findName', methods=['GET', 'POST'])
 def findName():
     if request.method == 'GET':
-        searchName = request.form['searchName']
-        results = db.session.query(Person).filter(Person.name == "chuj")
+        nameToFind = request.args['findName']
+        results = db.session.query(Person).filter(Person.name == nameToFind)
+        s = "People matching query: "
         for r in results:
-            print(r)
-        return redirect(url_for('home'))
+            s+=str(r.__dict__)
+
+        return render_template("index.html", str=s)
     
 with app.app_context():
     db.drop_all()
